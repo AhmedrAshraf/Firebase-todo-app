@@ -1,5 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js'
-import { getFirestore, collection, addDoc, onSnapshot, serverTimestamp, query, orderBy, doc, deleteDoc} from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js'
+import { getFirestore, collection, addDoc, onSnapshot, serverTimestamp, query, orderBy, doc, deleteDoc, updateDoc} from 'https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js'
 
 
 const firebaseConfig = {
@@ -16,4 +16,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
-export {db, collection, addDoc, onSnapshot, serverTimestamp, query, orderBy, doc, deleteDoc}
+export {db, collection, addDoc, onSnapshot, serverTimestamp, query, orderBy, doc, deleteDoc, updateDoc}
